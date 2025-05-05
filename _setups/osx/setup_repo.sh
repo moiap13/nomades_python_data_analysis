@@ -28,8 +28,8 @@ mkdir -p "$NOMADES_DIR"
 cd "$NOMADES_DIR" || exit
 
 # Adding the SSH key to the ssh-agent
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/"$PSE_VERSION"
+# eval "$(ssh-agent -s)"
+# ssh-add ~/.ssh/"$PSE_VERSION"
 
 # Clone the repository
 git clone "$USER_GITHUB_REPO" "$PSE_VERSION"
